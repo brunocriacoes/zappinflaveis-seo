@@ -6,9 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title></title>
+
+    <link rel="stylesheet" href="./disc/css/style.css">
+    <link rel="stylesheet" href="./disc/css/mobile.css" media="(max-width: 750px)">
     
 </head>
 <body>
+
+    <header>
+        <div>
+
+        </div>
+    </header>
+    <nav>
+        <div>
+            <a href="" title="">
+                <img src="./disc/logo/logo.png" alt="">
+            </a>
+            <div>
+
+            </div>
+            <template>
+                <a href="{{link}}" title="{{text}}">
+                    <img src="disc/ico/{{ico}}" alt="{{text}}">
+                    <span>{{text}}</span>
+                </a>
+            </template>
+        </div>
+    </nav>
+    <main></main>
+    <footer>
+        <div>
+            <div>
+                <h5>Novidades</h5>
+                <p>Inscreva-se para receber as novidades</p>
+                <form action="javascript:void(0)">
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" name="nome" required>
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Me Cadastrar" required>
+                        <input type="reset" hidden required>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h5>Contato</h5>
+                <address></address>
+                <template>
+                    <a href="{{link}}" title="{{texto}}">
+                        <img src="disc/ico/{{ico}}" alt="{{texto}}">
+                        {{texto}}
+                    </a>
+                </template>               
+            </div>
+            <div>
+                <h5>Endereço</h5>
+                <address></address>
+                <template>
+                    {{cep}} <br>
+                    {{rua}}, Nº {{numero}} <br>
+                    {{bairro}} <br>
+                    {{cidade}} - {{estado}} - {{pais}}
+                </template>
+            </div>
+
+        </div>
+        <div class="direitos">
+            &copy; 2010 Todos os direitos reservados
+            <a href="http://brunocriacoes.com" target="_blank">Bruno Criações</a>
+        </div>
+    </footer>
     
 </body>
 </html>
