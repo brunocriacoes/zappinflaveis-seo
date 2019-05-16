@@ -28,7 +28,7 @@ const $ = function( seletor ) {
                         }
                         return tpl_temp;
                     } ).join('');
-                    // html = html.replace(/\{\{.*\}\}/gi, '');
+                    html = html.replace(/\{\{.*\}\}/gi, '');
                     element.innerHTML = html
                 } )
             }
@@ -52,5 +52,11 @@ const $ = function( seletor ) {
             }
             return this
         },
+        val() {
+            if( this.result.length ) {
+                let elemento = this.result[0] || {}
+                return elemento.value || elemento.innerHTML || ''
+            }
+        }
     }
 }

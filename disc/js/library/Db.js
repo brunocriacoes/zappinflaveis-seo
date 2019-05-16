@@ -5,5 +5,3 @@ const Db =  {
         return json;
     },    
 }
-Db.host = "http://zap.con/"
-Db.get('site')

@@ -1,4 +1,4 @@
-{
+const site = {
     "nome": "Zapp Infláveis",
     "celular": "(11) 2939-8908",
     "telefone": "(11) 2613-3517",
@@ -36,7 +36,7 @@
             "ico": ""
         }
     ],
-    "endereco": {
+    "endereco": [ {
         "cep": "02215-000",
         "rua": "Rua Reverendo Israel Vieira Ferreira",
         "numero": "353",
@@ -44,17 +44,17 @@
         "cidade": "São Paulo",
         "estado": "SP",
         "pais": "Brasil",
-    },
+    } ],
     "links": [
         {
             "link": "tel:+551129398908",
             "texto": "(11) 2939-8908",
-            "ico": "telephone"
+            "ico": "telephone.png"
         },
         {
             "link": "tel:+551126133517",
             "texto": "(11) 2613-3517",
-            "ico": "whatsapp"
+            "ico": "whatsapp.png"
         },
         {
             "link": "https://www.facebook.com/zappinflaveisoficial/",
@@ -66,5 +66,17 @@
             "texto": "Facebook",
             "ico": "facebook.png"
         }        
+    ],
+    "linksTop": [
+        {
+            "link": "tel:+551129398908",
+            "texto": "(11) 2939-8908",
+            "ico": "telephone.png"
+        },
+        {
+            "link": "tel:+551126133517",
+            "texto": "(11) 2613-3517",
+            "ico": "whatsapp.png"
+        }    
     ]
 }

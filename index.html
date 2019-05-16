@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title></title>
+    <title> Zapp Infláveis</title>
 
     <link rel="stylesheet" href="./disc/css/style.css">
     <link rel="stylesheet" href="./disc/css/mobile.css" media="(max-width: 750px)">
+    <link rel="shortcut icon" href="./disc/logo/ico.png" type="image/x-icon">
     
 </head>
 <body>
 
     <header>
-        <div class="container">
-
+        <div class="container link-top" >
+            <div id="links_top"></div>
         </div>
+        <template id="tpl_link_top">
+            <a href="{{link}}" title="{{text}}">
+                <img src="./disc/ico/{{ico}}">
+                <span>{{texto}}</span>
+            </a>
+        </template>
     </header>
 
     <nav>
@@ -24,9 +31,12 @@
             <a href="" title="">
                 <img src="./disc/logo/logo.png" height="100">
             </a>
-            <div>
-
-            </div>
+            <div id="menu_site" class="menu-site"></div>
+            <template id="tpl_menu_site">
+                <a href="{{link}}" title="{{text}}">
+                    <span>{{texto}}</span>
+                </a>
+            </template>
             <form action="" class="busca">
                 <input type="text" placeholder="O que você procura?">
                 <label for="">
@@ -34,12 +44,6 @@
                 </label>
                 <input type="submit" hidden>
             </form>
-            <template>
-                <a href="{{link}}" title="{{text}}">
-                    <img src="disc/ico/{{ico}}" alt="{{text}}">
-                    <span>{{text}}</span>
-                </a>
-            </template>
         </div>
     </nav>
 
@@ -65,7 +69,6 @@
                     </address>
                 </div>
             </div>
-
         </section>
 
     </main>
@@ -92,7 +95,13 @@
             </div>
             <div>
                 <h5>Contato</h5>
-                <address></address>
+                <address id="links_contatos" class="links_contatos"></address>
+                <template id="tpl_link_contato">
+                    <a href="{{link}}" title="{{text}}">
+                        <img src="./disc/ico/{{ico}}">
+                        <span>{{texto}}</span>
+                    </a>
+                </template>
                 <template>
                     <a href="{{link}}" title="{{texto}}">
                         <img src="disc/ico/{{ico}}" alt="{{texto}}">
@@ -102,8 +111,8 @@
             </div>
             <div>
                 <h5>Endereço</h5>
-                <address></address>
-                <template>
+                <address id="endereco_redape"></address>
+                <template id="tpl_endereco">
                     {{cep}} <br>
                     {{rua}}, Nº {{numero}} <br>
                     {{bairro}} <br>
@@ -123,6 +132,7 @@
     <script src="disc/js/library/Orcamento.js"></script>
     <script src="disc/js/functions.js"></script>
     <script src="disc/js/interface.js"></script>
+    <script src="disc/data/site.js"></script>
     <script src="disc/js/main.js"></script>
     
 </body>

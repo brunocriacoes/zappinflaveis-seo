@@ -72,6 +72,7 @@ main section {}
 main section form label {
     display: block;
     color: #777;
+    font-size: 11px;
 }
 main section input,
 main section select,
@@ -172,4 +173,68 @@ footer a:hover {
     grid-template-columns: 150px 1fr 250px;
     grid-gap: 20px;
     align-items: center;
+}
+.menu-site {
+    text-align: right;
+}
+.menu-site a {
+    display: inline-block;
+    padding: 7px;
+    text-decoration: none;
+    font-family: var(--font);
+    color: #333;
+}
+.menu-site a:hover {
+    color: #FFF;
+    background-color: var(--tema);
+    border-radius: 4px;
+}
+.link-top {
+    text-align: right;
+    height: 40px;
+    align-items: center;
+}
+.link-top a {
+    display: inline-grid;
+    grid-template-columns: 20px 1fr;
+    grid-gap: 7px;
+    margin-right: 12px;
+    text-decoration: none;
+    font-family: var(--font);
+    color: #FFF;
+    align-items: center;
+}
+.link-top a:hover{}
+.link-top a img {
+    display: block;
+    width: 100%;
+    padding: 2px;
+    filter: invert(100%);
+}
+
+
+.links_contatos {
+    height: 40px;
+    align-items: center;
+}
+.links_contatos a {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-gap: 7px;
+    margin-right: 12px;
+    text-decoration: none;
+    font-family: var(--font);
+    color: #FFF;
+    align-items: center;
+    font-size: 17px;
+}
+.links_contatos a:hover{}
+.links_contatos a img {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    filter: invert(100%);
+}
+footer h5 {
+    font-size: 24px;
 }
