@@ -14,18 +14,26 @@
 <body>
 
     <header>
-        <div>
+        <div class="container">
 
         </div>
     </header>
+
     <nav>
-        <div>
+        <div class="container grid-header">
             <a href="" title="">
-                <img src="./disc/logo/logo.png" alt="">
+                <img src="./disc/logo/logo.png" height="100">
             </a>
             <div>
 
             </div>
+            <form action="" class="busca">
+                <input type="text" placeholder="O que você procura?">
+                <label for="">
+                    <img src="./disc/ico/search.png" >
+                </label>
+                <input type="submit" hidden>
+            </form>
             <template>
                 <a href="{{link}}" title="{{text}}">
                     <img src="disc/ico/{{ico}}" alt="{{text}}">
@@ -34,9 +42,36 @@
             </template>
         </div>
     </nav>
-    <main></main>
+
+    <main>
+
+        <section>
+            <div class="container">
+                <h1>Contato</h1>
+                <div class="grid-2">
+                    <form action="javascript:void(0)">
+                        <label for="">Nome</label>
+                        <input type="text">
+                        <label for="">Telefone</label>
+                        <input type="text">
+                        <label for="">Email</label>
+                        <input type="text">
+                        <label for="">Mensagem</label>
+                        <textarea rows="7"></textarea>
+                        <input type="submit" value="Enviar Mensagem">
+                    </form>
+                    <address>
+    
+                    </address>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
     <footer>
-        <div>
+        <div class="container grid-3">
             <div>
                 <h5>Novidades</h5>
                 <p>Inscreva-se para receber as novidades</p>
@@ -75,13 +110,20 @@
                     {{cidade}} - {{estado}} - {{pais}}
                 </template>
             </div>
-
         </div>
         <div class="direitos">
-            &copy; 2010 Todos os direitos reservados
+            &copy; 2010 - Todos os direitos reservados Zapp Infláveis - 
             <a href="http://brunocriacoes.com" target="_blank">Bruno Criações</a>
         </div>
     </footer>
+
+    <script src="disc/js/config.js"></script>
+    <script src="disc/js/library/Dom.js"></script>
+    <script src="disc/js/library/Db.js"></script>
+    <script src="disc/js/library/Orcamento.js"></script>
+    <script src="disc/js/functions.js"></script>
+    <script src="disc/js/interface.js"></script>
+    <script src="disc/js/main.js"></script>
     
 </body>
 </html>
